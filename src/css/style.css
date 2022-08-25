@@ -1,0 +1,346 @@
+
+body
+{
+    overflow: hidden;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.container
+{
+   display:grid;
+   grid-template-columns: 30% 70%;
+   height: 100%;
+   width:auto;
+     
+}
+
+.movielist
+{
+ 
+ height:85vh;
+ overflow-y: scroll;
+ border-style: none;
+ }
+
+ .moviedetails
+ 
+{ 
+    height:85vh;
+    border-style: none;
+    overflow-y:auto;
+  
+}
+.noResult
+{
+    align-items: center;
+   justify-items: center;
+   height: 20%;
+   width: 100%;
+}
+
+.movieImage
+{
+ 
+height: 70px;
+width:70px;
+float: left;
+margin-right: 20px;
+margin-top: 0px;
+
+}
+.movieItem
+{
+    
+    border: 1px;
+    margin-left: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    min-height:70px;
+    border-bottom: 1px solid #dddddd;
+
+}
+
+
+.movieListTitle
+{
+    color:rgb(107, 103, 103);
+    /*margin-top: 10px;*/
+    
+    font-size: small;
+    display: block;
+}
+.movieListYear
+{
+    color:grey;
+    margin-top: 10px;
+    font-size:x-small;
+  
+    
+}
+
+
+.movieListSplit
+{
+width: 50vh;
+color: grey;
+
+}
+.movieTotal
+{ 
+    color: rgb(107, 106, 106);
+    padding-left: 10px;
+    font-size: small;
+    position:relative;
+    width: auto;
+    height: 20px;
+    background-color: white;
+    display: inline;
+    width: 100%;
+   margin-top: 3%;
+  display:block
+    
+}
+
+.movieDisplayImage
+{
+   margin:20px;
+   height: 300px;
+   width: 200px;
+  float: left;
+border-style: solid;
+}
+.selectedList{
+    background-color: #ebebeb;
+}
+.movieDetailsDesc
+{  
+   
+    margin-top: 100px;
+}
+.rating
+{
+    height: auto;
+    width: auto;
+    padding: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: small;
+}
+.movieDescLine1
+{
+     margin-left: 10px;
+    height: auto;
+    width: auto;
+
+}
+.movieDescLine2
+{
+    display: block; 
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+
+}
+.movieDescLine3
+{
+    display: block; 
+    margin-top: 130px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right:40px;
+    height: auto;
+    text-align: justify;
+    line-height: 25px;
+    border-top: 1x solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+
+}
+.Sourcerating
+{
+    
+    margin-top: 5%;
+    margin-left: 10%;
+   
+}
+.ratingDisplay
+{
+    display: inline-flex;
+    margin-right: 5%;
+    border-right: 1px solid #dddddd;
+    padding-right: 10%;
+    text-align: center;
+    
+}
+.header{
+    display: grid;
+        background: #666666;
+      height: 80px;
+      max-height: 80px;
+      width: auto;
+      border-style: none;
+      border-bottom: none;
+      grid-column: 1 /3;
+      grid-row: 1;
+    
+}    
+.searchbar{
+    width: 40%;
+    float: left;
+    margin-top: 30px;
+}
+.filterContainer{
+    float: right;
+    width: 60%;
+}
+  
+.headerContainer
+{
+   
+     display: flex;
+      height: 100px;
+    width: 100%;
+}
+.typeFilter
+{
+    
+    width: 15px;                        
+    height: 15px;  
+
+   
+}
+.wrap {
+
+    overflow: hidden; 
+    position: relative;
+  }
+  
+  .sr-only {
+    position: absolute;
+    clip-path: inset(50%);
+  }
+  .searchIcon
+  {
+      height: 16px;
+      width: 16px;
+      position: relative;
+    left: 15px;
+    top: 4px;
+  }
+  .searchBar
+  {
+   
+ height: 24px;
+    width: 50%;
+    margin-left: -10px;
+    background: #666666;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    font-size: 12px;
+    color:#ffffff;
+  }
+  .searchBar::placeholder{
+      color: gainsboro;
+      font-size: 12px;
+  }
+  .searchBar:focus
+  {
+    border: 1px solid rgb(238, 234, 234);
+outline: none;;
+  }
+  
+  .year
+  {
+   
+      display: -ms-inline-grid;
+      width: 30%;
+      margin-top: 15px;
+      float: left;
+      font-size: 13px;
+font-weight: 600;
+  }
+  .year span{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: -32px;
+    color: #e9e9e9;
+}
+  .type
+  {
+    
+    display: -ms-inline-grid;
+    margin-top: 15px;
+    float: right;  
+width: 50%;
+display: inline;
+font-size: 13px;
+font-weight: 600;
+}
+.type span{
+    display: block;
+    margin-bottom: 4px;
+    margin-left: 0px;
+    color: #e9e9e9;
+}
+div.type label{
+    color: #e9e9e9;
+    margin: 4px;
+    top: -4px;
+    position: relative;
+    font-size: 12px;
+}
+.multi-range-slider {
+
+	border: 0 !important;
+	border-radius: 0px;
+	padding: 0px;
+	box-shadow: none;
+}
+.multi-range-slider .bar-inner {
+    background-color: white;
+}
+.multi-range-slider .thumb::before {
+    width: 15px;
+    height: 15px;
+    margin: -5px;
+}
+.multi-range-slider .bar-right, .multi-range-slider .bar-left {
+    box-shadow: none;
+}
+.label-min{
+    margin-top: -21px;
+    margin-left: -30px;
+    color: #e9e9e9;
+}
+.label-max{
+    margin-top: -21px;
+    margin-right: -30px;
+    color: #e9e9e9;
+}
+.multi-range-slider .thumb *{
+    bottom: 2px;
+    background-color: transparent;
+    box-shadow: none;
+}
+input[type="checkbox" i] {
+    margin: 2px;
+    position: relative;
+    accent-color: grey;
+    
+}
+.listContainer
+{
+    display:grid;
+    grid-template-rows: 5% 70%;  
+}
+.noResultImage
+{
+       height: auto;
+       width: auto;
+       display: none;
+       ;
+}
